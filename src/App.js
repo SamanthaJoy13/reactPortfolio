@@ -5,6 +5,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/header';
 import AboutMe from './components/about/aboutMe';
 import Contact from './components/contact';
+import Footer from './components/footer';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <AboutMe />
         <Contact />
+        <Footer />
       </div>
     </Router>
   );
