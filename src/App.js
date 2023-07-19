@@ -1,10 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import { Typography } from '@material-ui/core';
-
 import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
+
 
 import Header from './components/header';
+import AboutMe from './components/about/aboutMe';
 
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
     <Router>
       <div>
         <Header />
+        <AboutMe />
       </div>
     </Router>
   );
