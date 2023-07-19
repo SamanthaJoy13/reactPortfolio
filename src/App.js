@@ -1,12 +1,19 @@
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import { Typography } from '@material-ui/core';
 
-function App() {
+import React from 'react';
 
-  
+import Header from './components/header';
+
+
+function App() {
   return (
-    <div className="App">
-    </div>
+    <Router>
+      <div>
+        <Header />
+      </div>
+    </Router>
   );
 }
 
