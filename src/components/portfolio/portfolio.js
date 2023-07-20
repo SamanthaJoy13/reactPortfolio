@@ -19,26 +19,31 @@ const projects = [
     title: 'Chirper',
     src: chirperImg,
     repoLink: 'https://github.com/zelada5574/SocialMediagang',
+    deployLink: 'https://chirperapp.herokuapp.com/',
   },
   {
     title: 'Note Taking App',
     src: notesImg,
     repoLink: 'https://github.com/SamanthaJoy13/takeNotes',
+    deployLink: 'https://notetakerr-f5dc5f9cb574.herokuapp.com/',
   },
   {
     title: 'Work Day Scheduler',
     src: workDayImg,
     repoLink: 'https://github.com/SamanthaJoy13/workDayScheduler',
+    deployLink: 'https://samanthajoy13.github.io/workDayScheduler/',
   },
   {
     title: 'First Portfolio',
     src: portfolioImg,
     repoLink: 'https://github.com/SamanthaJoy13/personalPortfolio',
+    deployLink: 'https://samanthajoy13.github.io/personalPortfolio/',
   },
   {
     title: 'So Youre Looking for a Hotel?',
     src: hotelImg,
     repoLink: 'https://github.com/SamanthaJoy13/so_youre_looking_for_a_hotel',
+    deployLink: 'https://samanthajoy13.github.io/so_youre_looking_for_a_hotel/',
   },
 ];
 
@@ -86,9 +91,12 @@ function Portfolio() {
                     },
                   }}
                 >
-                  <Typography variant="subtitle1" component="div" sx={{ fontFamily: 'serif', fontWeight: 'bold', mb: 1 }}>
-                    {project.title}
-                  </Typography>
+                  {/* Use anchor tag to open in a new page */}
+                  <a href={project.deployLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Typography variant="subtitle1" component="div" sx={{ fontFamily: 'serif', fontWeight: 'bold', mb: 1 }}>
+                      {project.title}
+                    </Typography>
+                  </a>
                   <IconButton href={project.repoLink} target="_blank" rel="noopener noreferrer" sx={{ color: 'inherit' }}>
                     <GitHubIcon />
                   </IconButton>

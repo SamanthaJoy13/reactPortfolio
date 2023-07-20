@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, Paper, TextField, Button, FormHelperText } from '@mui/material';
+import { Typography, Paper, TextField, Button, FormHelperText, Box } from '@mui/material';
 import { styled } from '@mui/system';
 
 const ContactForm = styled('form')`
@@ -36,6 +36,7 @@ function Contact() {
   };
 
   return (
+    <Box sx={{ p: 2 }}>
     <Paper sx={{ p: 2 }}>
       <Typography variant="h3" component="div" sx={{ mb: 2, fontFamily: 'serif', color: '#A1A1A1', textAlign: 'center' }}>
         Contact
@@ -83,6 +84,7 @@ function Contact() {
         </Button>
       </ContactForm>
     </Paper>
+    </Box>
   );
 }
 
