@@ -29,7 +29,7 @@ function AboutMe() {
           </Typography>
           <StyledImage src={MeImage} alt="Profile" />
           <Typography variant="body1" component="div" sx={{ color: '685B56' }}>
-            Hello! I'm Samantha Tavares, and I am currently enrolled in a full stack coding bootcamp at the UC Berkeley extension. I have always had a deep passion for front-end development, as it allows me to bring designs to life and create captivating user experiences. I am excited about expanding my coding knowledge and skills, and I look forward to learning more and applying my newfound expertise. Coding is not just a hobby for me; it's a journey of growth and continuous improvement. 
+            Hello! I'm Samantha Tavares, and I am currently enrolled in a full stack coding bootcamp with UC Berkeley. I have always had a deep passion for front-end development, as it allows me to bring designs to life and create captivating user experiences. I am excited about expanding my coding knowledge and skills, and I look forward to learning more and applying my newfound expertise. Coding is not just a hobby for me; it's a journey of growth and continuous improvement. 
           </Typography>
         </CenteredContainer>
       </Paper>
